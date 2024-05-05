@@ -70,6 +70,7 @@ public class AreaPanel extends JPanel {
 
     private static Color getColor(int tile) {
         return switch (tile) {
+            case 0 -> new Color(0xcdc1b4);
             case 2 -> new Color(0xeee4da);
             case 4 -> new Color(0xede0c8);
             case 8 -> new Color(0xf2b179);
@@ -81,7 +82,7 @@ public class AreaPanel extends JPanel {
             case 512 -> new Color(0xedc850);
             case 1024 -> new Color(0xedc53f);
             case 2048 -> new Color(0xedc22e);
-            default -> Color.BLUE;
+            default -> Color.blue;
         };
     }
 
